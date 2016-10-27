@@ -1,0 +1,57 @@
+#banner{
+	&.banner-slider{
+		background: $bgSection;
+		p{
+			font-family: 'Lato', sans-serif;
+			color: #fff;
+			font-size: 3.125em;
+			position: absolute;
+			top: 102px;
+			left: 61px;
+			width: 294px;
+		}
+		.slick-slide{
+			position: relative;
+			margin: 20px 0 0 0;
+		}
+		.slick-arrow {
+				border: none;
+				background: none;
+				text-indent: -99999999999999px;	
+				position: absolute;
+				top: 50%;
+		}
+		.slick-active{
+			button{
+				background: red;
+				opacity: 1;
+			}
+		}
+		.slick-dots{
+			display: flex;
+			justify-content: center;
+			padding: 12px 0 14px 0;
+			.slick-active{
+				button{
+					background: $bgBody;
+					opacity: 1;
+				}
+			}
+			button{
+					border: none;
+					width: 14px;
+					height: 14px;
+					border-radius: 50%;
+					background: #626262;
+					text-indent: -99999999999999px;	
+					opacity: 0.5;
+					margin-right: 18px;
+					outline: none;
+					padding:0;
+			}
+
+		}
+
+	}
+
+}

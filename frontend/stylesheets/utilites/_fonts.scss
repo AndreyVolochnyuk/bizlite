@@ -1,0 +1,16 @@
+@font-face {
+      font-family: 'fontello';
+      src: url('./public/fonts/fontello.eot?69668342');
+      src: url('./public/fonts/fontello.eot?69668342#iefix') format('embedded-opentype'),
+           url('./public/fonts/fontello.woff?69668342') format('woff'),
+           url('./public/fonts/fontello.ttf?69668342') format('truetype'),
+           url('./public/fonts/fontello.svg?69668342#fontello') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+         
+.demo-icon{
+			font-family: "fontello";
+			font-style: normal;
+			font-weight: normal;
+		  }

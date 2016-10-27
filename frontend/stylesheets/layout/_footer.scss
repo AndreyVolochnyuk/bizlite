@@ -1,0 +1,99 @@
+#footer{
+	background: $bgHeader;
+	padding: 33px 0 43px 0;
+	.footer__info{
+		display: flex;
+		margin-bottom: 43px;
+		.about-us{
+			flex-basis: 30%;
+			padding-right: 68px;
+			&__title{
+				margin: 0 0 20px 0;
+			}
+			&__text{
+				font-size: .875em;
+				color: $colorSomeText;
+			}
+		}
+		.explore{
+			flex-basis: 15%;
+			&__title{
+				margin: 0 0 5px 0;
+			}
+			&__list_link{
+				@extend .about-us__text;
+				line-height: 26px;
+				display: inline-block;
+				&:hover{
+					color: $bgBody;
+					font-weight: bold;
+				}
+			}
+		}
+		.browse{
+			flex-basis: 17%;
+			&__title{
+				@extend .explore__title;
+			}
+			&__list_link{
+				@extend .explore__list_link;
+			}
+		}
+		.contact-us{
+			flex-basis: 19%;
+			padding-right: 50px;
+			&__title{
+				@extend .about-us__title;
+			}
+			&__list_item{
+				@extend .about-us__text;
+				letter-spacing: -.5px;
+				span{
+					font-weight: bold;
+				}
+			}
+			.adress{
+					margin-bottom: 20px;
+			}
+		}
+		.connect{
+			flex-basis: 19%;
+			&__title{
+				margin: 0 0 10px 0;
+				text-indent: 10px;
+			}
+			&__icons{
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				align-items: space-between;
+				a{
+					display: inline-block;
+					img{
+						display: block;
+					}
+					&:hover{
+						transform: scale(1.2);
+					}
+				}
+			}
+		}
+	}
+	.copyright{
+		display: flex;
+		justify-content: space-between;
+		&__text{
+			font-size: .8125em;
+			color: $colorSomeText;
+			line-height: 18px;
+			flex-basis: 64%;
+		}
+		&__logo{
+			flex-basis: 15%;
+		}
+	}
+}
+
+
+
+

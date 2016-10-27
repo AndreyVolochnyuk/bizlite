@@ -1,0 +1,59 @@
+#advantage{
+	&.advantage{
+		background: $bgHeader;
+	}
+	.advantage__list{
+		display: flex;
+		padding: 58px 0 42px 0;
+		justify-content: space-between;
+		&__item{
+			padding: 10px 0;
+			flex-basis: 22%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			.title{
+				display: flex;
+				align-items: center;
+				margin-bottom: 19px;
+				&__logo{
+					padding-right: 21px;
+				}
+				&__text{
+					letter-spacing: -.7px;
+				}
+			}
+		}
+	}
+	
+	.advantage__text{
+		font-size: .8125em;
+		line-height: 20px;
+		color: $colorText;
+		margin: 0 0 40px 0;
+		font-weight: bold;
+		letter-spacing: -.5px
+	}
+	.advantage__link{
+		font-size: .8125em;
+		color: $colorLink;
+		display: inline-block;
+		position: relative;
+		text-indent: 15px;
+		&:after {
+			content: "";
+			background: url('../images/caret.png')  no-repeat;
+	        position: absolute;
+	        left: 0;
+	        top: 50%;
+	        width: 5px;
+	        height: 10px;
+	        margin-top: -4px; 
+	    }
+	    &:hover{
+	    	color: $bgBody;
+	    	font-weight: bold;
+	    }
+	}
+	
+}
